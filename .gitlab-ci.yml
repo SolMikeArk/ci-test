@@ -30,6 +30,7 @@ cache:
 test:
   stage: test
   script:
+    - 'cd ci-test'
     - 'mvn $MAVEN_CLI_OPTS test'
 
 # For merge requests do not `deploy` but only run `verify`.
